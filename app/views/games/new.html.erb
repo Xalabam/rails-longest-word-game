@@ -1,0 +1,17 @@
+<h1>Puzzle the longest word</h1>
+
+<ul class="list-inline">
+<% @letters.each do |letter| %>
+
+    <li class="list-inline-item badge badge-primary"> <%= letter %> </li>
+<% end %>
+</ul>
+
+
+<form class="form-inline">
+  <div class="form-group mx-sm-3 m-2">
+    <label for="inputPassword2"  class="sr-only">Enter your word:</label>
+    <input type="text" value="<% params[:word] %>" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Confirm</button>
+</form>
